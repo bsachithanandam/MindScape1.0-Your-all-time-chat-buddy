@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/quotes2"
+        android:name="edu.sjsu.android.final_project.quotes"
+        android:label="fragment_quotes"
+        tools:layout="@layout/fragment_quotes" />
+    <action
+        android:id="@+id/action_global_quotes2"
+        app:destination="@id/quotes2" />
+    <fragment
+        android:id="@+id/chat2"
+        android:name="edu.sjsu.android.final_project.chat"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/stats2"
+        android:name="edu.sjsu.android.final_project.stats"
+        android:label="fragment_stats"
+        tools:layout="@layout/fragment_stats" />
+    <action
+        android:id="@+id/action_global_chat2"
+        app:destination="@id/chat2" />
+    <action
+        android:id="@+id/action_global_stats2"
+        app:destination="@id/stats2" />
+    <fragment
+        android:id="@+id/personal_home2"
+        android:name="edu.sjsu.android.final_project.personal_home"
+        android:label="fragment_personal_home"
+        tools:layout="@layout/fragment_personal_home" />
+    <action
+        android:id="@+id/action_global_personal_home2"
+        app:destination="@id/personal_home2" />
+    <fragment
+        android:id="@+id/add2"
+        android:name="edu.sjsu.android.final_project.Add"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <action
+        android:id="@+id/action_global_add2"
+        app:destination="@id/add2" />
+    <fragment
+        android:id="@+id/listItemFragment"
+        android:name="edu.sjsu.android.final_project.ListItemFragment"
+        android:label="fragment_item_list"
+        tools:layout="@layout/fragment_item_list" >
+        <action
+            android:id="@+id/action_listItemFragment_to_add"
+            app:destination="@id/add2" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_listItemFragment2"
+        app:destination="@id/listItemFragment" />
+    <fragment
+        android:id="@+id/home2"
+        android:name="edu.sjsu.android.final_project.home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_add2"
+            app:destination="@id/add2" />
+        <action
+            android:id="@+id/action_home2_to_quotes2"
+            app:destination="@id/quotes2" />
+        <action
+            android:id="@+id/action_home2_to_stats2"
+            app:destination="@id/stats2" />
+        <action
+            android:id="@+id/action_home2_to_infoFragment"
+            app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_home2_to_chat2"
+            app:destination="@id/chat2" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_home2"
+        app:destination="@id/home2" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="edu.sjsu.android.final_project.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+</navigation>

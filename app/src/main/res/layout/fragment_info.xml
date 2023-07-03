@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoFragment">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="About MindScape1.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="342dp"
+        android:layout_height="549dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="148dp"
+        android:text="MindScape1.0 is a simple Mental Health tracking Application which can help you with tracking your moods which can also be your friend in need as well. MindScape1.0 has a built-in chat system which can provide human like responses to your questions or statements. Although this cannot act like your personal therapist, MindScape1.0 can still listen to you and give you responses like Human.\n\nFeatures of MindScape1.0 \n\nNeed Motivation? - Quickly navigate to the quotes tab to read some wise words from successful people \n\nWant to record your mood? Click on the Add button and record your mood.\n\nNeed a friend to talk to? Go ahead to the chat section and enter your worries and questions. Please be assured that whatever you write is not saved anywhere.\n\nWant to Analyse your mood pattern? - Go over to the statistics page to look at the moods saved recently."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
